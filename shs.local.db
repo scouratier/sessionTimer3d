@@ -1,0 +1,61 @@
+$TTL    600 ;
+shs.local.   600 IN      SOA     ns0.nivalnetwork.com.   it.nivalnetwork.com. (
+                        2012040502      ; serial
+                        100         ; refresh
+                        100             ; retry
+                        2592000     ; expire
+                        20             ; minimum ttl
+                  )
+
+            	IN  NS	    ns1.nivalnetwork.com.
+                IN  NS      ns2.nivalnetwork.com.
+
+b429            IN  A   192.168.140.29
+b430            IN  A   192.168.140.30
+b431            IN  A   192.168.140.31
+b432            IN  A   192.168.140.32
+b433            IN  A   192.168.140.33
+b434            IN  A   192.168.140.34
+b435            IN  A   192.168.140.35
+b436            IN  A   192.168.140.36
+b437            IN  A   192.168.140.37
+b438            IN  A   192.168.140.38
+b439            IN  A   192.168.140.39
+b440            IN  A   192.168.140.40
+b441            IN  A   192.168.140.41
+b442            IN  A   192.168.140.42
+b443            IN  A   192.168.140.43
+b444            IN  A   192.168.140.44
+b445            IN  A   192.168.140.45
+b446		IN  A	192.168.140.46
+
+res01           IN      CNAME   b429
+res02           IN      CNAME   b430
+filter01        IN      CNAME   b431
+notif01         IN      CNAME   b432
+notif02         IN      CNAME   b433
+arcapp01        IN      CNAME   b432
+arcapp02        IN      CNAME   b433
+room01          IN      CNAME   b434
+room02          IN      CNAME   b425
+event01         IN      CNAME   b436
+chat01          IN      CNAME   b437
+mevent01        IN      CNAME   b437
+bus01           IN      CNAME   b439
+arcdb01         IN      CNAME   b440
+arcdb02         IN      CNAME   b442
+itemdb01        IN      CNAME   b443
+itemdb02        IN      CNAME   b444
+mrawdb01        IN      CNAME   b445
+
+itemdb		IN	CNAME	itemdb01
+rawdb		IN	CNAME	mrawdb01
+res		IN	CNAME	b446
+bus		IN	CNAME	bus01
+event		IN	CNAME	event01
+filter		IN	CNAME	filter01
+chat		IN	CNAME	chat01
+
+
+
+
